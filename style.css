@@ -1,36 +1,36 @@
 body{
+<<<<<<< HEAD
     font-family: 'Times New Roman', Times, serif;
     background-color: #000000;
+=======
+    font-family: "Rajdhani", sans-serif;
+    background-color: #526D82;
+>>>>>>> cd81905355a40fdc3bd297ead268ca3379e673ca
 }
-.navbar{
-    background-color: #27374d;
-    padding-left: 50PX;
-    margin-left: auto;
-    position: relative;
-    margin-right: auto;
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Merienda:wght@300..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+/* Stilizare generală pentru navbar */
+.navbar {
+    background-color: #333; /* Culoarea de fundal */
+    overflow: hidden; /* Ascunderea oricăror elemente care ies în afara navbar-ului */
+}
 
+/* Stilizare link-uri din navbar */
+.navbar a {
+    float: left; /* Alinierea link-urilor la stânga */
+    display: block; /* Elementele să fie afișate ca blocuri */
+    color: white; /* Culoarea textului */
+    text-align: center; /* Alinierea textului în centru */
+    padding: 14px 16px; /* Spatierea între link-uri */
+    text-decoration: none; /* Eliminarea sublinierii */
 }
-.button{
-    background-color: #27374D;
-    color: white;
-    height: 50px;
-    width: 180px;
-}
-.button:focus{
-    outline-color: transparent;
-    outline-style:solid;
-    box-shadow: 0 0 0 4px #526d82;
-    transition: 0.7s;
-    font-weight: bold;
 
+/* Stilizare link-uri la hover */
+.navbar a:hover {
+    background-color: #ddd; /* Culoare de fundal la hover */
+    color: black; /* Schimbarea culorii textului la hover */
 }
-.button:hover{
-    background-color: #DDE6ED;
-    color: black;
-}
-.button:active{
-    font-weight: bold;  
-}
+
+
 .titlewrap{
     display: flex;
     background-color: #9DB2BF;
