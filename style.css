@@ -1,0 +1,86 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #526D82;
+}
+.navbar{
+    background-color: #27374d;
+    padding-left: 50PX;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+
+}
+.button{
+    background-color: #27374D;
+    color: white;
+    height: 50px;
+    width: 180px;
+}
+.button:focus{
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #526d82;
+    transition: 0.7s;
+    font-weight: bold;
+
+}
+.button:hover{
+    background-color: #DDE6ED;
+    color: black;
+}
+.button:active{
+    font-weight: bold;  
+}
+.titlewrap{
+    display: flex;
+    background-color: #9DB2BF;
+    margin-top: 80PX;
+    outline-style:solid;
+}
+.titleh1{
+    font-size: 90px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 90px;
+    
+}
+.description{
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 70px;
+}
+.singuporlogin{
+    margin-top: 300px;  
+    display: flex; 
+    font-size: 30px;
+   margin-bottom: 90px;
+   color: white;
+}
+.isSing{
+    padding: 70px;
+    margin-right: 90px;
+    margin-right: 90px;
+    
+    outline-style:solid;
+    background-color: #1a1e24;
+}
+.isLog{
+    padding: 70px;
+    margin-left: 90px;
+    margin-right: 90px;
+    outline-style:solid;
+    background-color: #1a1e24;
+}
+.contact{
+    background-color:  #1a1e24;
+    padding-top: 90px;
+
+}
+.img{
+    height: 720px;
+    width: 1380px;
+    position: fixed;
+    z-index: -1;
+}
