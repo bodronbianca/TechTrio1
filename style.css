@@ -5,10 +5,11 @@
 .navbar {
     background-color: #333; /* Culoarea de fundal */
     overflow: hidden; /* Ascunderea oricăror elemente care ies în afara navbar-ului */
-    padding-left: 810px;
+    margin-left: auto;
     margin-right: 0;
     text-align: left;
-    padding-right: auto;
+    padding-left:800px;
+    z-index: -2;
 }
 body{
     background-color: #1a1e24;
@@ -22,6 +23,7 @@ body{
     text-align: center; /* Alinierea textului în centru */
     padding: 14px 16px; /* Spatierea între link-uri */
     text-decoration: none; /* Eliminarea sublinierii */
+    
 }
 
 /* Stilizare link-uri la hover */
@@ -86,7 +88,7 @@ body{
     height: 1100px;
     width: 1600px;
     position: fixed;
-    z-index: -1;
+    z-index: -3;
 }
 .isLog .button{
     margin-left: 60px;
@@ -117,9 +119,7 @@ body{
 .button:active{
     font-weight: bold;  
 }
-.nav{
-    display: flex;
-}
 .at{
-    background-color: #333;
+    background-color: #333;   
+    z-index: -1 ;
 }
