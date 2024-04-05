@@ -7,24 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    h1{
-        color: white;
-        
+    h1 {
+        color: white;   
     }
-    h2{
+    h2 {
         color: white;
         padding-left: 450px;
     }
-    h3{
+    h3 {
         color: white;
         padding-left: 850px;
     }
-    .div1{
-        outline-style: solid;
-        border-radius: 50px;
+    .bop {
         color: white;
+        background-color: gray;
+        padding: 20px;
+        margin: 20px;
+        position: relative;
+    }
+    .bop::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 20%;
+        border-left: 2px solid white; /* Added vertical line */
+    }
+    .imagine{
+        left: 20%;
+        height: 150px;
+        width: 150px;
     }
 </style>
+<link rel="stylesheet" href="./mainpage.css">
 <body bgcolor="#27374D">
     <div class="appwrap">
         <div class="nav">
@@ -35,10 +50,11 @@
             </div>
         </div>
     </div>
-    <h1 align="center">A</h1>
-    <div1 class="div1">
-        <h2 align="left">poza </h2>
+    <h1 align="center">P</h1>
+    <div class="bop"> <!-- corrected class name to have a dot before class name -->
+        
+        <img src="../elements/logo-pbinfo.png" class="imagine" alt="Pbinfo">
         <h3 align="left">descriere</h3>
-    </div1>
+    </div>
 </body>
 </html>
