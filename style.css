@@ -5,9 +5,10 @@
 .navbar {
     background-color: #333; /* Culoarea de fundal */
     overflow: hidden; /* Ascunderea oricăror elemente care ies în afara navbar-ului */
-    padding-left: 900px;
+    padding-left: 810px;
     margin-right: 0;
     text-align: left;
+    padding-right: auto;
 }
 body{
     background-color: #1a1e24;
@@ -115,4 +116,10 @@ body{
 }
 .button:active{
     font-weight: bold;  
+}
+.nav{
+    display: flex;
+}
+.at{
+    background-color: #333;
 }
