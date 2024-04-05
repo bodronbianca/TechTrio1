@@ -79,11 +79,21 @@ body{
 .contact{
     background-color:  #1a1e24;
     padding-top: 90px;
-
+    color: white;
+    outline-style:solid;
+    padding-bottom: 90px;
 }
 .img{
     height: 650px;
     width: 1380px;
     position: fixed;
     z-index: -1;
+}
+.isLog .button{
+    margin-left: 60px;
+    border-radius: 50px;
+}
+.isSing .button{
+    margin-left: 50px;
+    border-radius: 50px;
 }
