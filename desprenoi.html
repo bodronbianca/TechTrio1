@@ -61,7 +61,7 @@
       width: 500px;
       height: auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: #333;
       border-radius: 20px;
       margin-bottom: 50px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -71,7 +71,7 @@
     h1,
     h2 {
       font-family: "Rajdhani", sans-serif;
-      color: #27374D;
+      color: #fff;
       margin-bottom: 20px;
     }
 
@@ -95,10 +95,43 @@
       list-style-type: decimal;
       padding: 0;
     }
-   
+    .navbar {
+    background-color: #333; /* Culoarea de fundal */
+    overflow: hidden; /* Ascunderea oricăror elemente care ies în afara navbar-ului */
+    padding-left: 900px;
+    margin-right: 0;
+    text-align: left;
+}
+body{
+    background-color: #1a1e24;
+}
+
+/* Stilizare link-uri din navbar */
+.navbar a {
+    float: left; /* Alinierea link-urilor la stânga */
+    display: block; /* Elementele să fie afișate ca blocuri */
+    color:white; /* Culoarea textului */
+    text-align: center; /* Alinierea textului în centru */
+    padding: 14px 16px; /* Spatierea între link-uri */
+    text-decoration: none; /* Eliminarea sublinierii */
+}
+
+/* Stilizare link-uri la hover */
+.navbar a:hover {
+    background-color: #ddd; /* Culoare de fundal la hover */
+    color: black; /* Schimbarea culorii textului la hover */
+}
    
   </style>
   <body bgcolor="#27374D">
+    <div class="appWrap">
+        <div class="navbar">
+            <a href="./desprenoi.html">Despre Noi</a>
+            <a href="./singup/singup.html">SignUp</a>
+            <a href="./login/login.html">LogIn</a>
+            <a href="./mainPage/mainPage.html">Aplicatii </a>
+
+        </div>
     <h1 align="center">DESPRE NOI</h1>
     <hr>
     <div id="main-container">
