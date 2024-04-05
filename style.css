@@ -1,13 +1,6 @@
-body{
-<<<<<<< HEAD
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #000000;
-=======
-    font-family: "Rajdhani", sans-serif;
-    background-color: #526D82;
->>>>>>> cd81905355a40fdc3bd297ead268ca3379e673ca
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Merienda:wght@300..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 /* Stilizare generală pentru navbar */
 .navbar {
     background-color: #333; /* Culoarea de fundal */
