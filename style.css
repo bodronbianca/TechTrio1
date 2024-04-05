@@ -1,6 +1,6 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color: #526D82;
+    background-color: #000000;
 }
 .navbar{
     background-color: #27374d;
@@ -59,20 +59,19 @@ body{
    color: white;
 }
 .isSing{
-    padding: 70px;
-    margin-right: 90px;
-    margin-left: 90px;
+    padding: 80px;
+    margin-right: 100px;
+    margin-left: 100px;
     outline-style:solid;
     background-color: #1a1e24;
     border-radius: 50px;
 }
 .isLog{
-    padding: 70px;
-    margin-left: 90px;
-    margin-right: 90px;
+    padding: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
     outline-style:solid;
     background-color: #1a1e24;
-    align-items: center;
     border-radius: 50px;
 }
 
@@ -84,8 +83,8 @@ body{
     padding-bottom: 90px;
 }
 .img{
-    height: 650px;
-    width: 1380px;
+    height: 1100px;
+    width: 1600px;
     position: fixed;
     z-index: -1;
 }
