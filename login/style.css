@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #333; /* Culoarea de fundal */
+    overflow: hidden; /* Ascunderea oricăror elemente care ies în afara navbar-ului */
+    padding-left: 900px;
+    margin-right: 0;
+    text-align: left;
+}
+body{
+    background-color: #1a1e24;
+}
+
+.navbar a {
+    float: left; 
+    display: block; 
+    color:white; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+
+
+.navbar a:hover {
+    background-color: #ddd; 
+    color: black; 
+}
+.profileImg{
+    width: 200px;
+    height: 200px;
+    margin-top: 90px;
+    margin-left: 550px;
+    margin-right: 400px; 
+    border-radius: 50%;
+}
