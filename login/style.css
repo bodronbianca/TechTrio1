@@ -30,11 +30,27 @@ body{
     margin-left: 550px;
     margin-right: 400px; 
     border-radius: 50%;
+    
 }
-#name{
-    font-size: 50px;
-    margin-top: 50px;
-    margin-right: 450px;
-    margin-left: 500px;
+.info1{
+    font-size: 30px;
+    margin-left: 200px;
+    margin-right: 10px;
     color: white;
 }   
+.i{
+    font-size: 30px;
+    margin-right: 200px;
+    margin-left:10px;
+    color: white;
+}
+.ainfo{
+    display: flex;
+}
+.info{
+    outline: solid;
+    color: white;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 50px;
+}
