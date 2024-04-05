@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicatii</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
     h1 {
-      color: white;
+        color: white;   
     }
     h2 {
-      color: white;
-      padding-left: 450px;
+        color: white;
+        padding-left: 450px;
     }
     h3 {
-      color: white;
-      padding-left: 850px;
-      
+        color: white;
+        padding-left: 850px;
     }
     .bop {
-      color: white;
-      background-color: gray;
-      padding: 20px;
-      margin: 20px;
-      position: relative;
+        color: white;
+        background-color: gray;
+        padding: 20px;
+        margin: 20px;
+        position: relative;
+        display: flex;
     }
     .bop::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 20%;
-      border-left: 2px solid white; /* Added vertical line */
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 20%;
+        border-left: 2px solid white; /* Added vertical line */
     }
-    .imagine {
-      left: 20%;
-      height: 150px;
-      width: 150px;
+    .imagine{
+        left: 20%;
+        height: 150px;
+        width: 150px;
     }
-  </style>
-  <link rel="stylesheet" href="./mainpage.css" />
-  <body bgcolor="#27374D">
+    .bop .pob{
+        margin-left: 150px;
+        align-self: center;
+        right: 50%;
+        font-size: larger;
+        display: flex;
+    }
+    .btn2{
+        background-color: red;
+        border-radius: 50px;
+        height: 45px;
+        width: 110px;
+    }
+    .btn{
+        background-color: green;
+        border-radius: 50px;
+        height: 45px;
+        width: 110px;
+    }
+</style>
+<link rel="stylesheet" href="./mainpage.css">   
+<body bgcolor="#27374D">
     <div class="appwrap">
-      <div class="nav">
-        <div class="navbar">
-          <a href="../desprenoi.html">Despre Noi</a>
-          <a href="../contact.html">Contact</a>
-          <a href="../login/paginaafterlogin.html">Contul Tau</a>
+        <div class="nav">
+            <div class="navbar">
+                <a href="../desprenoi.html">Despre Noi</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../login/paginaafterlogin.html">Contul Tau</a>
+            </div>
         </div>
-      </div>
     </div>
     <h1 align="center">P</h1>
-    <div class="bop">
-      <!-- corrected class name to have a dot before class name -->
-
-      <img src="../elements/logo-pbinfo.png" class="imagine" alt="Pbinfo" />
-      <h3 align="left">
-        PBInfo este o platformă online dedicată antrenamentului și evaluării în
+    <div class="bop"> <!-- corrected class name to have a dot before class name -->
+        
+        <img src="../elements/logo-pbinfo.png" class="imagine" alt="Pbinfo">
+        <div class="pob"><p>
+            PBInfo este o platformă online dedicată antrenamentului și evaluării în
         informatică. Oferă exerciții de programare, competiții, monitorizare a
-        progresului și suport comunitar pentru elevi, studenți și pasionați de
-        informatică.
-      </h3>
+        progresului și suport comunitar pentru elevi, studenți și pasionați de informatică.
+        </p>
+        <div class="buttons">
+            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn2" id="bugs">BUG!</button>
+        </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
