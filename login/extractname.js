@@ -1,4 +1,4 @@
-var myName = "Traian";
+var myName = document.getElementById();
 window.addEventListener('DOMContentLoaded',function(){
    document.getElementById('name').textContent = myName;
 });

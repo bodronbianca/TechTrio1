@@ -9,7 +9,6 @@
     margin-right: 0;
     text-align: left;
     padding-left:800px;
-    z-index: -2;
 }
 body{
     background-color: #1a1e24;
@@ -23,7 +22,6 @@ body{
     text-align: center; /* Alinierea textului în centru */
     padding: 14px 16px; /* Spatierea între link-uri */
     text-decoration: none; /* Eliminarea sublinierii */
-    
 }
 
 /* Stilizare link-uri la hover */
@@ -119,7 +117,11 @@ body{
 .button:active{
     font-weight: bold;  
 }
+.nav{
+    display: flex;
+    z-index: -2   ;
+}
 .at{
     background-color: #333;   
-    z-index: -1 ;
+    z-index: -0.4 ;
 }
