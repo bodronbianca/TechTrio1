@@ -1,0 +1,20 @@
+.navbar {
+    background-color: #333; /* Culoarea de fundal */
+    overflow: hidden; /* Ascunderea oricăror elemente care ies în afara navbar-ului */
+}
+
+/* Stilizare link-uri din navbar */
+.navbar a {
+    float: left; /* Alinierea link-urilor la stânga */
+    display: block; /* Elementele să fie afișate ca blocuri */
+    color: white; /* Culoarea textului */
+    text-align: center; /* Alinierea textului în centru */
+    padding: 14px 16px; /* Spatierea între link-uri */
+    text-decoration: none; /* Eliminarea sublinierii */
+}
+
+/* Stilizare link-uri la hover */
+.navbar a:hover {
+    background-color: #ddd; /* Culoare de fundal la hover */
+    color: black; /* Schimbarea culorii textului la hover */
+}
