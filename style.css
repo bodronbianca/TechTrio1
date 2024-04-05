@@ -89,3 +89,24 @@
     margin-left: 50px;
     border-radius: 50px;
 }
+.button{
+    background-color: #27374D;
+    color: white;
+    height: 50px;
+    width: 180px;
+}
+.button:focus{
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #526d82;
+    transition: 0.7s;
+    font-weight: bold;
+
+}
+.button:hover{
+    background-color: #DDE6ED;
+    color: black;
+}
+.button:active{
+    font-weight: bold;  
+}
