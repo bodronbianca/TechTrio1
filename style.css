@@ -6,12 +6,15 @@
     background-color: #333; /* Culoarea de fundal */
     overflow: hidden; /* Ascunderea oricăror elemente care ies în afara navbar-ului */
 }
+body{
+    background-color: #1a1e24;
+}
 
 /* Stilizare link-uri din navbar */
 .navbar a {
     float: left; /* Alinierea link-urilor la stânga */
     display: block; /* Elementele să fie afișate ca blocuri */
-    color: white; /* Culoarea textului */
+    color:white; /* Culoarea textului */
     text-align: center; /* Alinierea textului în centru */
     padding: 14px 16px; /* Spatierea între link-uri */
     text-decoration: none; /* Eliminarea sublinierii */
