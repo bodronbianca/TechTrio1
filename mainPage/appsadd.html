@@ -6,80 +6,107 @@
     <link rel="stylesheet" href="style.css">
     <title>AppTech</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #27374D;
+            margin: 0;
+            padding: 0;
+        }
+
         .navbar {
-            background-color: #333; 
-            overflow: hidden; 
-            padding-left: 700px;
-            margin-right: 0;
-            text-align: left;
+            background-color: #333;
+            overflow: hidden;
+            padding-left: 20px; /* Am redus padding-ul pentru a alinia meniul la stânga */
             font-family: cursive;
         }
         
         .navbar a {
             float: left;
             display: block;
-            color:white;
-            text-align: center; 
+            color: white;
+            text-align: center;
             padding: 14px 16px;
-            text-decoration: none; 
+            text-decoration: none;
         }
         
         .navbar a:hover {
-            background-color: #ddd; 
-            color: black; 
+            background-color: #ddd;
+            color: black;
         }
-        form{
+
+        .appwrap {
+            margin-top: 50px; /* Am modificat margin-top-ul pentru a alinia formularul la mijlocul paginii */
+            text-align: center;
+        }
+
+        form {
             color: white;
             font-weight: bold;
-            font-size: 30px;
-            margin-left: 450px;
-            margin-top: 150px;
+            font-size: 18px; /* Am redus mărimea fontului pentru a se potrivi mai bine cu designul */
+            margin-left: auto;
+            margin-right: auto; /* Am centrat formularul pe orizontală */
+            width: 80%; /* Am redus lățimea formularului pentru a fi mai estetic */
         }
-        .submit{
+
+        label {
+            display: block; /* Am făcut etichetele să fie afișate pe linii separate */
+            margin-top: 20px; /* Am adăugat un spațiu între câmpurile de introducere */
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%; /* Am făcut câmpurile de introducere să aibă lățimea de 100% */
+            padding: 10px;
+            margin-top: 5px; /* Am adăugat un spațiu mic între câmpurile de introducere */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #445566; /* Am schimbat culoarea fundalului câmpurilor de introducere */
+            color: white; /* Am schimbat culoarea textului câmpurilor de introducere */
+        }
+
+        textarea {
+            resize: none; /* Am dezactivat redimensionarea textarei */
+            height: 150px; /* Am stabilit o înălțime fixă pentru textare */
+        }
+
+        .submit {
             width: 120px;
             height: 50px;
-            font-size: 19px;
-            border-radius: 50px;
-        }
-        .submit:hover{
-            background-color: black;
+            font-size: 16px; /* Am redus mărimea fontului pentru butonul de submit */
+            border-radius: 25px; /* Am rotunjit marginile butonului */
+            background-color: #007bff;
             color: white;
-            outline-style: solid;
-            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
-<body bgcolor="#27374D">
+<body>
     <div class="appwrap">
         <div class="navbar">
             <a href="../index.html">Home</a>
-            <a href="../myApps/myApp.html">Aplicatile Tale</a>
-            <a href="../mainPage/mainPage.html">Alte aplicati</a>
+            <a href="../myApps/myApp.html">Aplicatiile Tale</a>
+            <a href="../mainPage/mainPage.html">Alte aplicatii</a>
             <a href="../login/paginaafterlogin.html">Cont</a>
         </div>
         <form action="" method="post" name="submit-to-google-sheet1">
-            <label for="uname"><b>NUME APP</b></label>
-            <input type="text" placeholder="Enter Nume Site..."
-            style="width: 200px;"  id="siteNameInput">
-            <br>
-            <label for=""><b>EMAIL</b></label>
-            <input type="text" style="width: 300px;" placeholder="Email..." id="emailInput">
-            <br>
-            <label for="description"><b>Description</b></label>
-            <br>
-            <textarea type="text"
-            placeholder="Descriere" 
-                name="site_notes" 
-                rows="5" 
-                style="width: 300px;
-                height:190px"
-                class="form-control"
-                id="descriereInput"> </textarea>
-                <p style="font-size: 12px;">Character Count: <span id="charCount">0</span> / 256</p>
-            <button class="submit" id="submitButton" style="display: none;"> <a href="submit.html">SUBMIT</a></button>
+            <label for="siteNameInput"><b>Nume App</b></label>
+            <input type="text" placeholder="Introdu Numele Aplicației..." id="siteNameInput">
+            <label for="emailInput"><b>Email</b></label>
+            <input type="text" placeholder="Introdu Email-ul..." id="emailInput">
+            <label for="descriereInput"><b>Descriere</b></label>
+            <textarea type="text" placeholder="Descriere..." name="site_notes" rows="5" id="descriereInput"></textarea>
+            <p style="font-size: 12px;">Caractere: <span id="charCount">0</span> / 256</p>
+            <button class="submit" id="submitButton" style="display: block;"> <a href="submit.html">SUBMIT</a></button>
         </form>
-        <script src="./charcounter.js"></script>
     </div>
-    <script src="./goaftersubmit.js"></script>
 </body>
 </html>
