@@ -228,6 +228,55 @@
               <h4>Pbinfo ( <scan>https://www.pbinfo.ro</scan> )</h4>
               <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="color1"></div>
             </div>
+            <br>
+            <div class="anapp">
+              <button style="background-color: lightcoral;width:50px;height:20px
+              ;margin-top:20px;margin-right:10px" id="bugforFavapp">BUG!</button>
+              <script>
+                var reports = 0;
+                var specialBtn = document.getElementById("bugforFavapp");
+
+                if (specialBtn) {
+                    specialBtn.addEventListener("click", function() {
+                        reports++;
+                        if (reports >= 10 && reports < 20) {
+                            document.getElementById("color1").style.backgroundColor = "yellow";
+                        } else if (reports >= 20) {
+                            document.getElementById("color1").style.backgroundColor = "red";
+                        }
+                    });
+                } else {
+                    console.error("Button not found!");
+                }
+              </script>
+              <br>
+              <h4>Instagram ( <scan>https://www.instagram.ro</scan> )</h4>
+              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="color1"></div>
+            </div>
+            <br>
+            <div class="anapp">
+              <button style="background-color: lightcoral;width:50px;height:20px
+              ;margin-top:20px;margin-right:10px" id="bugforFavapp">BUG!</button>
+              <script>
+                var reports = 0;
+                var specialBtn = document.getElementById("bugforFavapp");
+
+                if (specialBtn) {
+                    specialBtn.addEventListener("click", function() {
+                        reports++;
+                        if (reports >= 10 && reports < 20) {
+                            document.getElementById("color1").style.backgroundColor = "yellow";
+                        } else if (reports >= 20) {
+                            document.getElementById("color1").style.backgroundColor = "red";
+                        }
+                    });
+                } else {
+                    console.error("Button not found!");
+                }
+              </script>
+              <h4>Snapchat( <scan>https://www.snapchat.ro</scan> )</h4>
+              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="color1"></div>
+            </div>
           </div>
           <div class="yourapps">
             <h3>Aplicatile tale</h3>
