@@ -3,7 +3,7 @@ gapi.load('client', initClient);
 function initClient() {
     gapi.client.init({
         apiKey: 'AIzaSyBFhL82ecXdMFfPQnf1sOlxkvkZpgjJICQ',
-        clientId: 'YOUR_CLIENT_ID',
+        clientId: '670554946368-1earlne2fo2833p4fkpsk5uvg26hcics.apps.googleusercontent.com',
         discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
         scope: 'https://www.googleapis.com/auth/spreadsheets'
     }).then(function () {
