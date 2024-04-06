@@ -224,7 +224,19 @@ p {
   display: flex;
   margin-left: 35px;
 }
-
+.rizthemall{
+  color:white;
+  border-radius: 50px;
+  margin-top: 10px;
+  background-color: blue;
+  width: 70px;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-left: -20px;
+}
+button{
+  border-radius: 50px;
+}
     </style>
       <link rel="stylesheet" href="./style.css">
 </head>
@@ -245,23 +257,24 @@ p {
         <div class="bodywrap">
           <div class="appfav">
             <h3>Aplicatii favorite</h3  >
+              <button class="rizthemall" id="fixiesAll">Fix All!</button>
               <!-- an app ! -->
             <div class="anapp">
               <!-- color11 & bugforFavapp - 1 -->
               <button style="background-color: lightcoral;width:50px;height:20px
-              ;margin-top:20px;margin-right:10px" id="pbinfo">BUG!</button>
+              ;margin-top:20px;margin-right:10px;border-radius: 50px;" id="pbinfo">BUG!</button>
               <h4>Pbinfo ( <scan>https://www.pbinfo.ro</scan> )</h4>
-              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="colorpbinfo"></div>  
+              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="colorpbinfo" class="status"></div>  
               <script src="./pbinfo.js"></script>
             </div>
             <br>
             <div class="anapp">
               <!-- bugforFavapp1 & color12 - 2 -->
               <button style="background-color: lightcoral;width:50px;height:20px
-              ;margin-top:20px;margin-right:10px" id="instagram">BUG!</button>
+              ;margin-top:20px;margin-right:10px;" id="instagram">BUG!</button>
               <br>
               <h4>Instagram ( <scan>https://www.instagram.ro</scan> )</h4>
-              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="colorinstagram"></div>
+              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" class="status" id="colorinstagram"></div>
               <script src="./instagram.js"></script>
             </div>
             <br>
@@ -270,11 +283,23 @@ p {
               <button style="background-color: lightcoral;width:50px;height:20px
               ;margin-top:20px;margin-right:10px" id="snapchat">BUG!</button>
               <h4>Snapchat( <scan>https://www.snapchat.ro</scan> )</h4>
-              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="colorsnapchat"></div>
+              <div class="status" style="width: 70px;height:30px;
+              background-color:green;border-radius: 50px;" id="colorsnapchat"></div>
             <script src="./snapchat.js"></script>
             </div>
           </div>
           <div class="yourapps">
+            <script>
+                var fixbtn = document.getElementById('rizthemall');
+                var culoare1 = document.getElementById('colorpbinfo');
+                var culoare2 = document.getElementById('colorsnapchat');
+                var culoare3 = document.getElementById('colorinstagram');
+                fixbtn.addEventListener('click',function(){
+                  culoare1.style.backgroundColor = 'green';
+                  culoare2.style.backgroundColor = 'green';
+                  culoare3.style.backgroundColor ='green';  
+                });
+              </script>
             <h3>Aplicatiile Frecvente</h3>
             <div class="iapp">
               <button id="fixIt" style="width: 50px;

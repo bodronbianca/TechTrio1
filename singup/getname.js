@@ -1,4 +1,4 @@
-import { handleInput } from "./handleInputname";
+import { handleInput } from "../login/handleInputname";
 var inputField = document.getElementById('nume');
 var submitbtn = document.getElementById('submitbutton');
 

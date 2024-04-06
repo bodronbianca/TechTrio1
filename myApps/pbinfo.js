@@ -13,19 +13,19 @@ document.getElementById('pbinfo').addEventListener('click', function() {
                 colorDiv.style.backgroundColor = 'yellow';
                 colorTimeout = setTimeout(function() {
                     colorDiv.style.backgroundColor = 'green';
-                }, 30000);
+                }, 3000);
                 break;
             case 'yellow':
                 colorDiv.style.backgroundColor = 'green';
                 colorTimeout = setTimeout(function() {
                     colorDiv.style.backgroundColor = 'red';
-                }, 30000);
+                }, 3000);
                 break;
             default:
                 colorDiv.style.backgroundColor = 'red';
                 colorTimeout = setTimeout(function() {
                     colorDiv.style.backgroundColor = 'yellow';
-                }, 30000);
+                }, 3000);
         }
     } else if (clickCount > 10) {
         clearTimeout(colorTimeout); 

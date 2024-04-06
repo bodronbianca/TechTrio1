@@ -1,11 +1,11 @@
 let clickCountInstagram = 0;
 let colorTimeoutInstagram;
-let transitionTimeInstagram = 30000; 
+let transitionTimeInstagram = 3000; 
 
 document.getElementById('instagram').addEventListener('click', function() {
     clickCountInstagram++;
 
-    if (clickCountInstagram % 10 === 0) {
+    if (clickCountInstagram  === 0) {
         let colorDiv = document.getElementById('colorinstagram');
         let currentColor = colorDiv.style.backgroundColor;
 
