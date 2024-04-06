@@ -27,6 +27,25 @@
             background-color: #ddd; 
             color: black; 
         }
+        form{
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 450px;
+            margin-top: 150px;
+        }
+        .submit{
+            width: 120px;
+            height: 50px;
+            font-size: 19px;
+            border-radius: 50px;
+        }
+        .submit:hover{
+            background-color: black;
+            color: white;
+            outline-style: solid;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body bgcolor="#27374D">
@@ -38,8 +57,27 @@
             <a href="../login/paginaafterlogin.html">Cont</a>
         </div>
         <form action="" method="post" name="submit-to-google-sheet1">
-            <label for=""></label>
+            <label for="uname"><b>NUME APP</b></label>
+            <input type="text" placeholder="Enter Nume Site..."
+            style="width: 200px;"  id="siteNameInput">
+            <br>
+            <label for=""><b>EMAIL</b></label>
+            <input type="text" style="width: 300px;" placeholder="Email..." id="emailInput">
+            <br>
+            <label for="description"><b>Description</b></label>
+            <br>
+            <textarea type="text"
+            placeholder="Descriere" 
+                name="site_notes" 
+                rows="5" 
+                style="width: 300px;
+                height:190px"
+                class="form-control"
+                id="descriereInput"> </textarea>
+                <p style="font-size: 12px;">Character Count: <span id="charCount">0</span> / 256</p>
+            <button class="submit">Submit!</button>
         </form>
     </div>
+    <script src="./charcounter.js"></script>
 </body>
 </html>
