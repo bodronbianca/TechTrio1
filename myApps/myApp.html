@@ -157,7 +157,7 @@
        }
       
        .yourapps{
-        padding-left: 390px;
+        padding-left: 190px;
        }
        .anapp{
         background-color: #576c8b;
@@ -171,6 +171,18 @@
        .anapp div{
         margin-top: 15px;
         margin-left:10px ;
+       }
+       .iapp{
+        display: flex;
+        background-color: #576c8b;
+        border-radius: 50px;
+        margin-left: -90px;
+    
+       }
+       .iappsplit{
+        display: flex;
+        margin-left:35px;
+
        }
       </style>
       <link rel="stylesheet" href="./style.css">
@@ -203,7 +215,7 @@
                 if (specialBtn) {
                     specialBtn.addEventListener("click", function() {
                         reports++;
-                        if (reports >= 1 && reports < 20) {
+                        if (reports >= 10 && reports < 20) {
                             document.getElementById("color1").style.backgroundColor = "yellow";
                         } else if (reports >= 20) {
                             document.getElementById("color1").style.backgroundColor = "red";
@@ -219,6 +231,18 @@
           </div>
           <div class="yourapps">
             <h3>Aplicatile tale</h3>
+            <div class="iapp">
+              <button id="fixIt" style="width: 50px;
+              margin-top:20px;margin-left:15px;height:20px;background-color:lightgreen">Fix!</button>
+              
+              <div class="iappsplit">
+                <h4 id="appIApp">GamerBoy</h4><p> - </p><p id="appIlink">fdsakdjnakdbakdnua</p>
+                  <div style="width: 70px;;height:30px;background-color:green;border-radius: 50px;margin-right:15px;margin-top:15px;margin-left:30px" id="color2">
+                  <script>
+                   </script>
+                </div>
+              </div>
+            </div>
           </div>
          
         </div>
