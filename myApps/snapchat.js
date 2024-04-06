@@ -1,12 +1,13 @@
 let clickCount = 0;
 let colorTimeout;
+const transitionTime = 30000; // 30 seconds in milliseconds
 
 document.getElementById('snapchat').addEventListener('click', function() {
     clickCount++;
 
     if (clickCount % 10 === 0) {
-        let colorDiv = document.getElementById('colorsnapchat');
-        let currentColor = colorDiv.style.backgroundColor;
+        const colorDiv = document.getElementById('colorsnapchat');
+        const currentColor = colorDiv.style.backgroundColor;
 
         switch (currentColor) {
             case 'red':
@@ -29,5 +30,6 @@ document.getElementById('snapchat').addEventListener('click', function() {
         }
     } else if (clickCount > 10) {
         clearTimeout(colorTimeout); 
+        clickCount = 0;
     }
-}); 
+});
