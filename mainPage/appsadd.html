@@ -34,6 +34,18 @@
             margin-left: 450px;
             margin-top: 150px;
         }
+        .submit{
+            width: 120px;
+            height: 50px;
+            font-size: 19px;
+            border-radius: 50px;
+        }
+        .submit:hover{
+            background-color: black;
+            color: white;
+            outline-style: solid;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body bgcolor="#27374D">
@@ -62,10 +74,10 @@
                 height:190px"
                 class="form-control"
                 id="descriereInput"> </textarea>
-
-    <?php echo $site_notes; ?>
-</textarea>
+                <p style="font-size: 12px;">Character Count: <span id="charCount">0</span> / 256</p>
+            <button class="submit">Submit!</button>
         </form>
     </div>
+    <script src="./charcounter.js"></script>
 </body>
 </html>
