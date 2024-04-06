@@ -14,7 +14,7 @@ function initClient() {
 }
 
 function readDataFromSheet() {
-    var spreadsheetId = 'https://docs.google.com/spreadsheets/d/16Vv2ecLhUJ8LPIYaDxRw2wKuAwKosf4Jt1H4L2LYCmg/edit#gid=0';
+    var spreadsheetId = '16Vv2ecLhUJ8LPIYaDxRw2wKuAwKosf4Jt1H4L2LYCmg';
 
 
     gapi.client.sheets.spreadsheets.values.get({
