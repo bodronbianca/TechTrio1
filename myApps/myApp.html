@@ -206,76 +206,28 @@
             <h3>Aplicatii favorite</h3  >
               <!-- an app ! -->
             <div class="anapp">
+              <!-- color11 & bugforFavapp - 1 -->
               <button style="background-color: lightcoral;width:50px;height:20px
               ;margin-top:20px;margin-right:10px" id="bugforFavapp">BUG!</button>
-              <script>  
-                var reports = 0;
-                var specialBtn = document.getElementById("bugforFavapp");
-
-                if (specialBtn) {
-                    specialBtn.addEventListener("click", function() {
-                        reports++;
-                        if (reports >= 10 && reports < 20) {
-                            document.getElementById("color1").style.backgroundColor = "yellow";
-                        } else if (reports >= 20) {
-                            document.getElementById("color1").style.backgroundColor = "red";
-                        }
-                    });
-                } else {
-                    console.error("Button not found!");
-                }
-              </script>
               <h4>Pbinfo ( <scan>https://www.pbinfo.ro</scan> )</h4>
-              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="color1"></div>
+              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="color11"></div>  
             </div>
             <br>
             <div class="anapp">
+              <!-- bugforFavapp1 & color12 - 2 -->
               <button style="background-color: lightcoral;width:50px;height:20px
-              ;margin-top:20px;margin-right:10px" id="bugforFavapp">BUG!</button>
-              <script>
-                var reports = 0;
-                var specialBtn = document.getElementById("bugforFavapp");
-
-                if (specialBtn) {
-                    specialBtn.addEventListener("click", function() {
-                        reports++;
-                        if (reports >= 10 && reports < 20) {
-                            document.getElementById("color1").style.backgroundColor = "yellow";
-                        } else if (reports >= 20) {
-                            document.getElementById("color1").style.backgroundColor = "red";
-                        }
-                    });
-                } else {
-                    console.error("Button not found!");
-                }
-              </script>
+              ;margin-top:20px;margin-right:10px" id="bugforFavapp1">BUG!</button>
               <br>
               <h4>Instagram ( <scan>https://www.instagram.ro</scan> )</h4>
-              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="color1"></div>
+              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="color12"></div>
             </div>
             <br>
             <div class="anapp">
+              <!-- bugforFavapp2 & color13 - 3 -->
               <button style="background-color: lightcoral;width:50px;height:20px
-              ;margin-top:20px;margin-right:10px" id="bugforFavapp">BUG!</button>
-              <script>
-                var reports = 0;
-                var specialBtn = document.getElementById("bugforFavapp");
-
-                if (specialBtn) {
-                    specialBtn.addEventListener("click", function() {
-                        reports++;
-                        if (reports >= 10 && reports < 20) {
-                            document.getElementById("color1").style.backgroundColor = "yellow";
-                        } else if (reports >= 20) {
-                            document.getElementById("color1").style.backgroundColor = "red";
-                        }
-                    });
-                } else {
-                    console.error("Button not found!");
-                }
-              </script>
+              ;margin-top:20px;margin-right:10px" id="bugforFavapp2">BUG!</button>
               <h4>Snapchat( <scan>https://www.snapchat.ro</scan> )</h4>
-              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="color1"></div>
+              <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="color13"></div>
             </div>
           </div>
           <div class="yourapps">
@@ -368,7 +320,7 @@
 
             </div>
           </div>
-         
+         <script src="./fixbutton.js"></script>
         </div>
     </div>
 </body>
