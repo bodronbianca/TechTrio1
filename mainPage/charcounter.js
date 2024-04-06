@@ -6,6 +6,3 @@ textarea.addEventListener("input", function() {
 
     charCountSpan.textContent = text.length;
 });
-export function sendTextLength(){
-    return text.length;
-}
