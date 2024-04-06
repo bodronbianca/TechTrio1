@@ -109,41 +109,82 @@ body{
             <a href="../mainPage/mainPage.html">Aplicatii </a>
 
         </div>
-       
+<script>
+        var sheetName = 'Foaie1'
+var scriptProp = PropertiesService.getScriptProperties()
+
+function intialSetup () {
+  var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+  scriptProp.setProperty('key', activeSpreadsheet.getId())
+}
+
+function doPost (e) {
+  var lock = LockService.getScriptLock()
+  lock.tryLock(10000)
+
+  try {
+    var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+    var sheet = doc.getSheetByName(sheetName)
+
+    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+    var nextRow = sheet.getLastRow() + 1
+
+    var newRow = headers.map(function(header) {
+      return header === 'timestamp' ? new Date() : e.parameter[header]
+    })
+
+    sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+      .setMimeType(ContentService.MimeType.JSON)
+  }
+
+  catch (e) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+      .setMimeType(ContentService.MimeType.JSON)
+  }
+
+  finally {
+    lock.releaseLock()
+  }
+}
+ </script>      
     <h1 style="text-align: center;">-Inregistrare-</h2>
 
-    <form action="/action_page.php" method="post">
+    <form action="/action_page.php" method="post" name>
 
         <div class="container">
-            <form id="signupForm">
+            <form id="signupForm" name="submit-to-google-sheet">
             <label for="uname"><b>NUME</b></label>
-            <input type="text" placeholder="Nume" name="uname" id="signUpName">
+            <input type="text" placeholder="Nume" name="name" id="nume">
 
            <label for="uname"><b>PRENUME</b></label> 
-            <input type="text" placeholder="Prenume" name="uname" id="lastname">
+            <input type="text" placeholder="Prenume" name="prename" id="prenume">
 
             <label for="uname"><b>EMAIL</b></label> 
             <br>
-            <input type="email" placeholder="Email" name="uname" id="gmail">
+            <input type="email" placeholder="Email" name="email" id="email">
 <br>
             <label for="uname"><b>NUME UTILIZATOR</b></label> 
             <input type="text" placeholder="Nume de Utilizator" name="uname" id="username">
 <br>
             <label for="uname"><b>DATA NASTERII</b></label> 
             <br>
-            <input type="date" placeholder="Data Nasterii" name="uname" id="birth">
+            <input type="date" placeholder="Data Nasterii" name="ndate" id="datadenastere">
 <br>
             <label for="uname"><b>Varsta</b></label> 
             <br>
-            <input type="number" placeholder="Varsta" name="uname" id="age">
+            <input type="number" placeholder="Varsta" name="age" id="varsta">
 <br>
             <label for="psw"><b>PAROLA</b></label>
             <input type="password" placeholder="Enter Password" name="psw" id="passw">
 <br>
             <label for="uname"><b> CONFIRMA PAROLA</b></label> 
-            <input type="password" placeholder="Confirma Parola" name="uname" id="passwc">
+            <input type="password" placeholder="Confirma Parola" name="psw1" id="passwc">
 <br>        </form>
-            <button ><a href="../login/paginaafterlogin.html">SignUp</a></button>
+            <button type="submit"><a href="../login/paginaafterlogin.html">SignUp</a></button>
            
             <div class="container" style="background-color: #DDE6ED">
                  <a href="../index.html"><button type="button" class="cancelbtn" >Cancel</button></a>   
@@ -152,5 +193,6 @@ body{
 
         
     </form>
+    <script src="./collect.js"></script>
 </body>
 </html>

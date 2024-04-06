@@ -7,4 +7,3 @@ textarea.addEventListener("input", function() {
 
     charCountSpan.textContent = text.length;
 });
-
