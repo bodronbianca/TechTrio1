@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> LogIn</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Merienda:wght@300..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+        
         body {
             font-family: "Rajdhani", sans-serif;
             background-color:#27374D ;
@@ -123,16 +123,16 @@ body{
         </div>
     <h1 style="text-align: center;">-Autentificare-</h2>
 
-    <form action="/action_page.php" method="post">
+    <form action="/action_page.php" method="post" name="submit-to-google-sheet">
 
         <div class="container">
             <label for="uname"><b>NUME</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" >
+            <input type="text" placeholder="Enter Username" name="name" >
 
             <label for="psw"><b>PAROLA</b></label>
             <input type="password" placeholder="Enter Password" name="psw" >
 
-            <button><a href="/login/paginaafterlogin.html">LogIn</a></button>
+            <button type="submit"><a href="/login/paginaafterlogin.html">LogIn</a></button>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Tine-ma minte!
             </label>
@@ -144,6 +144,7 @@ body{
         <button1><a href="/singup/singup.html">INREGISTREAZA-TE</a></button1>
     </form>
     
+    <script src="./extractname.js"></script>
 </body>
 </html>
 
