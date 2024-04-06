@@ -26,7 +26,7 @@ function appendDataToGoogleSheet(userData) {
         spreadsheetId: '16Vv2ecLhUJ8LPIYaDxRw2wKuAwKosf4Jt1H4L2LYCmg',
         range: 'Sheet1!A1', // Specify the range where you want to append data
         valueInputOption: 'USER_ENTERED',
-        insertDataOption: 'INSERT_ROWS',
+        insertDataOption: 'INSERT_ROWS',    
         resource: {
             values: [[userData.username, userData.email, userData.password]]
         },
