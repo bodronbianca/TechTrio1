@@ -258,6 +258,17 @@ button{
           <div class="appfav">
             <h3>Aplicatii favorite</h3  >
               <button class="rizthemall" id="fixiesAll">Fix All!</button>
+              <script>
+                document.getElementById('fixiesAll').addEventListener('click',function(){
+                  reports =0;
+                  reports1 = 0;
+                  reports2 = 0;
+                  const elements = document.querySelectorAll('.status');
+                  elements.forEach(element => {
+                    element.style.backgroundColor = "green";
+                  });
+                });
+              </script>
               <!-- an app ! -->
             <div class="anapp">
               <!-- color11 & bugforFavapp - 1 -->
@@ -275,6 +286,7 @@ button{
                   }else if(reports >=20){
                     document.getElementById('colorpbinfo').style.backgroundColor = "red";
                     alert("Pbinfo has fallen");
+                    reports = 0;
                   }
                 });
               </script>
@@ -297,6 +309,7 @@ button{
                   }else if(reports1 >=20){
                     document.getElementById('colorinstagram').style.backgroundColor = "red";
                     alert("Instagram has fallen");
+                    reports1 = 0;
                   }
                 });
               </script>
@@ -319,6 +332,7 @@ button{
                 }else if(reports2 >=20){
                   document.getElementById('colorsnapchat').style.backgroundColor = "red";
                   alert("Snapchat has fallan");
+                  reports2 = 0;
                 }
               });
             </script>
@@ -342,12 +356,12 @@ button{
               </script>
             <h3>Aplicatiile Frecvente</h3>
             <div class="iapp">
-              <button id="fixIt" style="width: 50px;
+              <button id="fixIt1" style="width: 50px;
               margin-top:20px;margin-left:15px;height:20px;background-color:lightgreen">Fix!</button>
               
               <div class="iappsplit">
                 <h4 id="appIApp">Gmail</h4><p> - </p><p id="appIlink">https://www.gmail.ro</p>
-                  <div style="width: 70px;;height:30px;background-color:green;border-radius: 50px;margin-right:15px;margin-top:15px;margin-left:30px" id="color2">
+                  <div style="width: 70px;;height:30px;background-color:green;border-radius: 50px;margin-right:15px;margin-top:15px;margin-left:30px" id="color21">
                   <script>
                    </script>
                 </div>

@@ -95,9 +95,14 @@
         border: 1px solid #ccc;
         margin: 20px auto;
       }
+      canvas{
+        width: 300px;
+        height: 200px;
+      }
 </style>
 <link rel="stylesheet" href="./mainpage.css">   
 <body bgcolor="#27374D">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <div class="appwrap">
         <div class="nav">
             <div class="navbar">
@@ -116,11 +121,50 @@
            
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="details1">Details</button>
             <button class="btn2" id="bugs">BUG!</button>
+            <script>
+                var state1 = true;
+                document.getElementById('details1').addEventListener('click',function(){
+                    if(state1){
+                        document.getElementById('graph-container1').style.display = "block";
+                        state1 = false; 
+                    }else{
+                        document.getElementById('graph-container1').style.display = "none";
+                        state1 = true;
+                    }
+                });
+                
+            const entrancesData = {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                label: 'Site Entrances',
+                data: [100, 200, 150, 300, 250, 400], 
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+                }]
+            };
+            
+            const ctx = document.getElementById('graph').getContext('2d');
+            
+            const siteEntranceChart = new Chart(ctx, {
+                type: 'line',
+                data: entrancesData,
+                options: {
+                scales: {
+                    yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                    }]
+                }
+                }
+            });
+            </script>
         </div>
         </div>
-        <div class="graph-container">
+        <div id="graph-container1" style="display: none;">
             <canvas id="graph"></canvas>
           </div>
     </div>
@@ -133,8 +177,8 @@
             
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
-            <button class="btn2" id="bugs">BUG!</button>
+            <button class="btn" id="addtolist1">Add.</button>
+            <button class="btn2" id="bugs1">BUG!</button>
         </div>
         </div>
         
@@ -148,8 +192,8 @@
             Cash App este o aplicație de plăți mobile care permite utilizatorilor să trimită și să primească bani rapid, să cumpere și să vândă acțiuni și criptomonede .
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
-            <button class="btn2" id="bugs">BUG!</button>
+            <button class="btn" id="addtolist2">Add.</button>
+            <button class="btn2" id="bugs2">BUG!</button>
         </div>
         </div>
         
