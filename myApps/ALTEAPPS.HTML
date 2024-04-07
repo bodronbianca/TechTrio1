@@ -135,32 +135,7 @@
                     }
                 });
                 
-            const entrancesData = {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-                datasets: [{
-                label: 'Site Entrances',
-                data: [100, 200, 150, 300, 250, 400], 
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
-                }]
-            };
             
-            const ctx = document.getElementById('graph').getContext('2d');
-            
-            const siteEntranceChart = new Chart(ctx, {
-                type: 'line',
-                data: entrancesData,
-                options: {
-                scales: {
-                    yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                    }]
-                }
-                }
-            });
             </script>
         </div>
         </div>
@@ -177,10 +152,14 @@
             
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist1">Add.</button>
+            <button class="btn" id="addtolist2">Details</button>
             <button class="btn2" id="bugs1">BUG!</button>
         </div>
+        
         </div>
+        <div id="graph-container2" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
     
@@ -192,10 +171,13 @@
             Cash App este o aplicație de plăți mobile care permite utilizatorilor să trimită și să primească bani rapid, să cumpere și să vândă acțiuni și criptomonede .
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist2">Add.</button>
+            <button class="btn" id="addtolist3">Details</button>
             <button class="btn2" id="bugs2">BUG!</button>
         </div>
         </div>
+        <div id="graph-container3" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
    
@@ -206,10 +188,13 @@
             Disney+ este o platformă de streaming care oferă acces la filme, seriale și alte conținuturi Disney, Pixar, Marvel, Star Wars și National Geographic.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist4">Details</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container4" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
     
@@ -221,10 +206,13 @@
         ESPN este o rețea sportivă renumită, oferind știri, analize și evenimente sportive în direct.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist5">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container5" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
     
@@ -235,10 +223,13 @@
             Fitbit oferă dispozitive de monitorizare a sănătății și a activității fizice, inclusiv brățări de fitness și ceasuri inteligente.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist6">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container6" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
    
@@ -249,10 +240,13 @@
             Gmail este un serviciu de email gratuit oferit de Google, care permite utilizatorilor să trimită și să primească mesaje de email cu ușurință.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist7">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container7" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
     
@@ -263,10 +257,13 @@
             Hulu este o platformă de streaming populară, oferind filme, emisiuni TV și seriale originale pentru abonați.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist8">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container8" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
    
@@ -277,10 +274,13 @@
             Indeed este o platformă populară de căutare a locurilor de muncă, oferind o gamă largă de oportunități din diverse domenii și locații.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist9">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container9" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
     
@@ -291,10 +291,13 @@
             Jack in the Box este o rețea populară de restaurante fast-food, cunoscută pentru meniul variat și opțiunile pentru micul dejun, burgeri, sandwich-uri și taco-uri.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist10">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container10" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
     
@@ -306,10 +309,13 @@
             Kahoot este o platformă de învățare interactivă, care oferă jocuri de quiz pentru testarea cunoștințelor și implicarea participanților.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist11">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container11" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
     
@@ -320,10 +326,13 @@
             LEGO App oferă instrucțiuni de construcție și idei noi pentru fanii LEGO.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist12">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container12" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
     
@@ -335,10 +344,13 @@
         MC App este o aplicație mobilă oferită de McDonald's pentru comenzi rapide și personalizate.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist13">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container13" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
     
@@ -351,10 +363,13 @@
         Netflix este o platformă populară de streaming video, oferind o gamă variată de filme, seriale și documentare disponibile pentru vizionare on-demand.
         </p>
         <div class="buttons">
-            <button class="btn" id="addtolist">Add.</button>
+            <button class="btn" id="addtolist14">Details.</button>
             <button class="btn2" id="bugs">BUG!</button>
         </div>
         </div>
+        <div id="graph-container14" style="display: none;">
+            <canvas id="graph"></canvas>
+          </div>
         
     </div>
 </body>
