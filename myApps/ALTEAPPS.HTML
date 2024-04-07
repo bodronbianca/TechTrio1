@@ -186,10 +186,23 @@
         <div class="buttons">
             <button class="btn" id="addtolist3">Details</button>
             <button class="btn2" id="bugs2">BUG!</button>
+            <script>
+                var state3 = true;
+                document.getElementById('addtolist3').addEventListener('click',function(){
+                    if(state3){
+                        document.getElementById('graph-container3').style.display = "block";
+                        state3 = false; 
+                    }else{
+                        document.getElementById('graph-container3').style.display = "none";
+                        state3 = true;
+                    }
+                });
+            </script>
         </div>
         </div>
         <div id="graph-container3" style="display: none;">
             <canvas id="graph"></canvas>
+            <img src="../elements/img2.jpg" alt="" style="width: 300px;height:150px;margin-top:-160px">
           </div>
         
     </div>
