@@ -134,8 +134,6 @@
                         state1 = true;
                     }
                 });
-                
-            
             </script>
         </div>
         </div>
@@ -155,11 +153,25 @@
         <div class="buttons">
             <button class="btn" id="addtolist2">Details</button>
             <button class="btn2" id="bugs1">BUG!</button>
+            <script>
+                var state2 = true;
+                document.getElementById('addtolist2').addEventListener('click',function(){
+                    if(state2){
+                        document.getElementById('graph-container2').style.display = "block";
+                        state2 = false; 
+                    }else{
+                        document.getElementById('graph-container2').style.display = "none";
+                        state2 = true;
+                    }
+                });
+                
+            </script>
         </div>
         
         </div>
         <div id="graph-container2" style="display: none;">
             <canvas id="graph"></canvas>
+            <img src="../elements/img1.jpg" alt="" style="width: 300px;height:150px;margin-top:-160px">
           </div>
         
     </div>
