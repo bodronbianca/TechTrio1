@@ -265,7 +265,19 @@ button{
               ;margin-top:20px;margin-right:10px;border-radius: 50px;" id="pbinfo">BUG!</button>
               <h4>Pbinfo ( <scan>https://www.pbinfo.ro</scan> )</h4>
               <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" id="colorpbinfo" class="status"></div>  
-              <script src="./pbinfo.js"></script>
+              <!-- <script src="./pbinfo.js"></script> -->
+              <script>
+                var reports = 0;
+                document.getElementById('pbinfo').addEventListener('click',function(){
+                  reports++;
+                  if(reports>10 && reports<20){
+                    document.getElementById('colorpbinfo').style.backgroundColor = "yellow";
+                  }else if(reports >=20){
+                    document.getElementById('colorpbinfo').style.backgroundColor = "red";
+                    alert("Pbinfo has fallen");
+                  }
+                });
+              </script>
             </div>
             <br>
             <div class="anapp">
@@ -275,7 +287,19 @@ button{
               <br>
               <h4>Instagram ( <scan>https://www.instagram.ro</scan> )</h4>
               <div style="width: 70px;height:30px;background-color:green;border-radius: 50px;" class="status" id="colorinstagram"></div>
-              <script src="./instagram.js"></script>
+              <!-- <script src="./instagram.js"></script> -->
+              <script>
+                var reports1 = 0;
+                document.getElementById('instagram').addEventListener('click',function(){
+                  reports1++;
+                  if(reports1 >10 && reports1<20){
+                    document.getElementById('colorinstagram').style.backgroundColor = "yellow";
+                  }else if(reports1 >=20){
+                    document.getElementById('colorinstagram').style.backgroundColor = "red";
+                    alert("Instagram has fallen");
+                  }
+                });
+              </script>
             </div>
             <br>
             <div class="anapp">
@@ -285,8 +309,24 @@ button{
               <h4>Snapchat( <scan>https://www.snapchat.ro</scan> )</h4>
               <div class="status" style="width: 70px;height:30px;
               background-color:green;border-radius: 50px;" id="colorsnapchat"></div>
-            <script src="./snapchat.js"></script>
+            <!-- <script src="./snapchat.js"></script> -->
+            <script>
+              var reports2 = 0;
+              document.getElementById('snapchat').addEventListener('click',function(){
+                reports2++;
+                if(reports2 >10 && reports2<20){
+                  document.getElementById('colorsnapchat').style.backgroundColor = "yellow";
+                }else if(reports2 >=20){
+                  document.getElementById('colorsnapchat').style.backgroundColor = "red";
+                  alert("Snapchat has fallan");
+                }
+              });
+            </script>
             </div>
+            <script src="/myApps/fixbutton.js"></script>
+            <script src="./pbinfo.js"></script>
+            <script src="./snapchat.js"></script>
+            <script src="./instagram.js"></script>
           </div>
           <div class="yourapps">
             <script>

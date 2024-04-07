@@ -4,7 +4,8 @@ let colorTimeout;
 document.getElementById('pbinfo').addEventListener('click', function() {
     clickCount++;
 
-    if (clickCount % 10 === 0) {
+    if (clickCount   === 20) {
+        alert("Pbinfo has fallen");
         let colorDiv = document.getElementById('colorpbinfo');
         let currentColor = colorDiv.style.backgroundColor;
 

@@ -5,7 +5,8 @@ const transitionTime = 3000;
 document.getElementById('snapchat').addEventListener('click', function() {
     clickCount++;
 
-    if (clickCount % 10 === 0) {
+    if (clickCount  === 20) {
+        alert("Snapchat has fallen");
         const colorDiv = document.getElementById('colorsnapchat');
         const currentColor = colorDiv.style.backgroundColor;
 

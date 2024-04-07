@@ -5,7 +5,8 @@ let transitionTimeInstagram = 3000;
 document.getElementById('instagram').addEventListener('click', function() {
     clickCountInstagram++;
 
-    if (clickCountInstagram  === 0) {
+    if (clickCountInstagram  === 20) {
+        alert("Instagram has fallen");
         let colorDiv = document.getElementById('colorinstagram');
         let currentColor = colorDiv.style.backgroundColor;
 

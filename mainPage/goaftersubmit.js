@@ -34,6 +34,8 @@ var charBelow256 = function(){
     return true;
 }
 
-if(isEmail() && charBelow256() && isName){
-    submitbtn.style.display = "block";
-}
+document.getElementById('submitButton').addEventListener('click',function(){
+    if(!(isEmail() && charBelow256() && isName)){
+        alert("You forgot something");
+    }
+});
